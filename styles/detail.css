@@ -355,9 +355,9 @@ body.dark .home .text{
 }
 
 /* zorgt dat de button niet zichtbaar is na 30em */
-button {
+/* button {
     visibility: hidden;
-}
+} */
 /* 
 .sidebar.close .toggle {
     visibility: visible;
@@ -373,13 +373,13 @@ button {
 } */
 
 
-/* zorgt voor bepaalde acties als het scherm kleiner is dan 30em */
-@media (width < 30em) {
+/* zorgt voor bepaalde acties als het scherm kleiner is dan 35em */
+@media (width < 35em) {
    
     .home{
         left: 25px;
     }
-    /* zorgt dat het menu niet zichtbaar is als het scherm kleiner is dan 30em  */
+    /* zorgt dat het menu niet zichtbaar is als het scherm kleiner is dan 35em  */
     .sidebar{
         visibility: hidden;
         position: fixed;
@@ -409,7 +409,7 @@ button {
         visibility: visible;
     }
     
-    /* zorgt dat de button zichtbaar is als het scherm kleiner is dan 30em */
+    /* zorgt dat de button zichtbaar is als het scherm kleiner is dan 35em */
     button{
         visibility: visible;
         padding: 1em;
@@ -422,7 +422,7 @@ button {
     }
 }
 
-@media(width > 30em){
+@media(width > 35em){
     .home{
         position: absolute;
         top: 0;
@@ -460,4 +460,31 @@ main ul.book-s{
 .genre{
     background-color: green;
     border-radius: 20%;
+}
+
+.info{
+    word-wrap: wrap;
+    max-width: 20em;
+}
+
+button1{
+    background-color: red;
+    padding: 1em;
+    margin: 1em;
+    position: fixed;
+        top: 2em;
+        right: 1em;
+    border-radius: 20%;
+}
+
+button1:hover{
+background-color: blue;
+}
+
+@media(width > 37,5em){
+    button1{
+        top: 4em;
+        right: 1em;
+    border-radius: 20%;
+    }
 }
