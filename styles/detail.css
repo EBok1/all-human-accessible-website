@@ -440,11 +440,30 @@ h2{
 }
 p{
     padding: 0.5em;
+    white-space: pre-line;
 }
 
-a{
-    padding: 0.2em;
-    margin: 0.5em;
+.reserveren{
+    max-width: 6em;
+    max-height: 3em;
+    background-color: var(--primary-color-light);
+    border-radius: 20%;
+    border: solid;
+    color: black;
+    padding: 0.4em;
+    font-size: 1.17em;
+}
+
+.beschikbaarheid{
+    max-height: 200px;
+    overflow-y: scroll;
+    border-radius: 5%;
+    border: solid;
+    margin-bottom: 1.5em;
+}
+
+.recensies{
+    margin-top: 1em;
 }
 
 #books{
@@ -464,6 +483,10 @@ main ul.book-s{
 .genre{
     background-color: rgb(75, 170, 50);
     border-radius: 20%;
+    color: black;
+    padding: 0.2em;
+    margin: 0.5em;
+    text-decoration: none;
 }
 
 .genre:hover{
@@ -471,11 +494,12 @@ main ul.book-s{
 }
 
 .info{
-    word-wrap: wrap;
     max-width: 20em;
+    margin-right: 2em;
 }
 
 button1{
+    background-color: var(--primary-color-light);
     padding: 1em;
     margin: 1em;
     position: fixed;
