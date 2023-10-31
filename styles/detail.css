@@ -436,16 +436,20 @@ body.dark .home .text{
 }
 
 h2{
-    padding-left: 1em;
-    color: var(--primary-color);
+    padding: 0.5em;
 }
 p{
+    padding: 0.5em;
+}
+
+a{
     padding: 0.2em;
+    margin: 0.5em;
 }
 
 #books{
     max-width: 20em;
-    padding: 1em;
+    padding: 0.5em;
     place-items: center;
 }
 
@@ -458,8 +462,12 @@ main ul.book-s{
 }
 
 .genre{
-    background-color: green;
+    background-color: rgb(75, 170, 50);
     border-radius: 20%;
+}
+
+.genre:hover{
+    color: rgb(180, 200, 0);
 }
 
 .info{
@@ -468,23 +476,25 @@ main ul.book-s{
 }
 
 button1{
-    background-color: red;
     padding: 1em;
     margin: 1em;
     position: fixed;
         top: 2em;
-        right: 1em;
+        right: 0.2em;
     border-radius: 20%;
+    border: solid;
+    max-height: 3em;
+    
 }
 
 button1:hover{
-background-color: blue;
+    background-color: rgb(230, 0, 130);
 }
 
-@media(width > 37,5em){
+@media(width < 37.5em){
     button1{
-        top: 4em;
-        right: 1em;
+        top: 5em;
+        right: 0.1em;
     border-radius: 20%;
     }
 }
