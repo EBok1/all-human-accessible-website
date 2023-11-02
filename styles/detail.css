@@ -441,8 +441,19 @@ h2{
 p{
     padding: 0.5em;
     white-space: pre-line;
+    max-width: 15em;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "image info"
+    "rechtsonder onder";
+}
+.adress{
+    margin-left: 1em;
+    padding: 0.5em;
+}
 .reserveren{
     max-width: 6em;
     max-height: 3em;
@@ -460,6 +471,7 @@ p{
     border-radius: 5%;
     border: solid;
     margin-bottom: 1.5em;
+    grid-area: rechtsonder;
 }
 
 .recensies{
@@ -470,12 +482,21 @@ p{
     max-width: 20em;
     padding: 0.5em;
     place-items: center;
+    margin-left: 1em;
+    grid-area: image;
 }
 
-main ul.book-s{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+.book-s{
+    grid-area: info;
+}
+
+a{
+    gap:1em;
+    padding-left: 1em;
+}
+
+.row3{
+    grid-area: onder;
     gap:1em;
     padding-left: 1em;
 }
